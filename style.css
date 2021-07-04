@@ -55,7 +55,7 @@ navbar-toggler {
 } */
 
 .card {
-  margin: 30px;
+  margin: 20px;
 }
 
 div.card.bg-primary.border.border-light {
@@ -82,6 +82,8 @@ div.card.bg-primary.border.border-light {
 .info-card {
   transition: all .2s ease-in-out;
   background-color: #284B63 !important;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .info-card:hover {
