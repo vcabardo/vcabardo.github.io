@@ -10,56 +10,150 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <script src="script.js">
+
+  </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-md navbar-dark navbar-bg-color fixed-top shadow-sm">
     <a class="navbar-brand" href="index.html">Vensan Cabardo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Activities and Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-      <button class="btn btn-outline-light" type="button">Resume</button>
-    </div>
+        <button class="btn btn-outline-light" type="button">Resume</button>
+      </div>
+
+      <div class="webpage-logos pull-right d-none d-md-block">
+        <img src="https://img.icons8.com/material-outlined/24/ffffff/minus.png"/>
+        <img src="https://img.icons8.com/material-outlined/24/ffffff/rounded-square.png"/>
+        <img src="https://img.icons8.com/material-outlined/24/ffffff/delete-sign.png"/>
+      </div>
+
   </nav>
 
   <div class="container">
     <div class="row">
       <div class="col-1">
-        <div class="sidebar d-flex flex-column justify-content-center">
-          <a href="https://github.com/vcabardo" target="_blank">
-            <img class='logo' src="https://img.icons8.com/ios-glyphs/60/ffffff/github.png"/>
-          </a>
-
-          <a href="https://www.linkedin.com/in/vensan-cabardo/" target="_blank">
-            <img class='logo' src="https://img.icons8.com/ios-glyphs/60/ffffff/linkedin.png"/>
-          </a>
-        </div>
+        <hr id="left">
       </div>
 
       <div class="col-10">
         <div id="about" class="row">
           <div class="col">
-            <div class="card bg-primary border border-light">
-              <div class="card-body text-light">
-                <h5 class="card-title">About Me</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="position-relative">
+              <img class="corner-icon" src="https://img.icons8.com/material-rounded/96/ffffff/cursor.png"/>
+              <div class="card bg-primary border border-light">
+                <div class="card-body text-light text-light">
+                  <h5 class="card-title">About Me</h5>
+                    Hello, my name is Vensan. <br> <br>
+
+                    I am a Master's student pursuing a degree in Computer Science.
+                    I love creating software and am incredibly passionate about promoting diversity in computing.
+                    This passion has taken me to many places, including a <a href="https://www.google.com/" class="paragraph-link">huge tech corporation</a>, a
+                    <a href="https://ywic.nmsu.edu/" class="paragraph-link">local diversity program</a>, and a <a href="https://www.northropgrumman.com/" class="paragraph-link">large aerospace and defense company</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="achievements" class="row">
+          <div class="col">
+            <div class="position-relative">
+              <img class="corner-icon" src="https://img.icons8.com/material-rounded/96/ffffff/cursor.png"/>
+              <div class="card bg-primary border border-light">
+                <div class="card-body text-light text-light">
+                  <h5 class="card-title">Activities and Achievements</h5>
+                    <!-- <div class="card info-card"> -->
+                      <!-- <img class="card-img-top" src="ng_roy.jpg" alt="Card image cap"> -->
+
+                      <h6>Tech Exchange</h6>
+
+
+                        Attended multiple project-based computer science classes
+                        at Google’s Mountain View/Sunnyvale campuses as part of
+                        an initiative to increase representation of Black and Latinx
+                        engineers in industry.
+
+                        <br>
+                        <br>
+
+                      <div class="row">
+                        <div class="col">
+                          <div class="card-header d-flex flex-row justify-content-between simple-card">
+                            <h6>Learn more about Tech Exchange</h6>
+                            <a href="https://buildyourfuture.withgoogle.com/programs/tech-exchange/" target="_blank" class="external-link">
+                              <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-header d-flex flex-row justify-content-between simple-card">
+                            <h6>Read my interview about my experience</h6>
+                            <a href="https://buildyourfuture.withgoogle.com/programs/tech-exchange/" target="_blank" class="external-link">
+                              <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-header d-flex flex-row justify-content-between simple-card">
+                            <h6>Read this local article about Tech Exchange</h6>
+                            <a href="https://www.lcsun-news.com/story/news/local/community/2018/08/18/nmsu-students-among-small-group-spend-semester-google/1032789002/" target="_blank" class="external-link">
+                              <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- </div> -->
+                    <br>
+
+                    <hr/>
+
+                  <h6>Grace Hopper Scholar</h6>
+                    Was chosen to represent New Mexico State University at the prestigious Grace Hopper Conference as part of
+                    an incredibly selective cohort of women in technology.
+                    <br>
+                    <br>
+                  <hr/>
+
+                  <h6>Bachelor's of Science in Computer Science, High Honors</h6>
+                    Graduated in the top 1.5% of students by GPA in the largest college at New Mexico State University,
+                    the College of Arts and Sciences.
+                  <br>
+                  <br>
+                  <hr/>
+
+                  <h6>Computing Science Tutor</h6>
+                  Provided virtual computer science tutoring services to students in NMSU's computer science program
+                  during the peak of COVID-19 restricions.
+                  <br>
+
+                </div>
               </div>
             </div>
           </div>
@@ -67,133 +161,142 @@
 
         <div id="experience" class="row">
           <div class="col">
-            <div class="card bg-primary border border-light">
-              <div class="card-body text-light">
-                <h5 class="card-title">Experience</h5>
-                <div class="row">
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>Northrop Grumman</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
+            <div class="position-relative">
+              <img class="corner-icon" src="https://img.icons8.com/material-rounded/96/ffffff/cursor.png"/>
+              <div class="card bg-primary border border-light">
+                <div class="card-body text-light text-light">
+                  <h5 class="card-title">Experience</h5>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card info-card">
+                        <!-- <img class="card-img-top" src="ng_roy.jpg" alt="Card image cap"> -->
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Northrop Grumman</h6>
+                          <a href="https://www.northropgrumman.com/" target="_blank" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
+                        <div class="card-footer d-flex flex-row justify-content-center">
+                          <!-- <p>Python</p>
+                          <p>Flask</p>
+                          <p>Agile</p>
+                          <p>Tableau</p> -->
+                        </div>
                       </div>
-                      <div class="card-body">
-                        This is some text within a card body.
-                      </div>
-                      <div class="card-footer d-flex flex-row justify-content-center">
-                        <!-- <p>Python</p>
-                        <p>Flask</p>
-                        <p>Agile</p>
-                        <p>Tableau</p> -->
+                    </div>
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Young Women in Computing</h6>
+                          <a href="https://ywic.nmsu.edu/" target="_blank" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+                            I am incredibly passionate about promoting diversity in tech and have been working
+                            with Young Women in Computing to foster
+                            a passion for computing in underrepresented groups in my local area.
+                            Click the link above to learn more about YWiC, our work, and our mission.
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>Young Women in Computing</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>Google, Inc.</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
+                  <div class="row">
+                    <div class="col">
+                      <div class="card info-card">
+                        <!-- <img class="card-img-top" src="google.jpg" alt="Card image cap"> -->
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Google, Inc.</h6>
+                          <a href="https://buildyourfuture.withgoogle.com/programs/step/" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>TIMM</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>TIMM</h6>
+
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </div>
 
         <div id="projects" class="row">
           <div class="col">
-            <div class="card bg-primary border border-light">
-              <div class="card-body text-light">
-                <h5 class="card-title">Projects</h5>
-                <div class="row">
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>Gardyn</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
+            <div class="position-relative">
+              <img class="corner-icon" src="https://img.icons8.com/material-rounded/96/ffffff/cursor.png"/>
+              <div class="card bg-primary border border-light">
+                <div class="card-body text-light text-light">
+                  <h5 class="card-title">Projects</h5>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Personal Website</h6>
+                          <!-- <a href="#" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a> -->
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
-                      <div class="card-body">
-                        This is some text within a card body.
+                    </div>
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Gardyn</h6>
+                          <a href="https://gardynapp.web.app/" class="external-link" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>Silicon Valley Trail</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>-----</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
+                  <div class="row">
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Silicon Valley Trail</h6>
+                          <a href="#" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card info-card">
-                      <div class="card-header d-flex flex-row justify-content-between">
-                        <h6>----</h6>
-                        <a href="#" class="external-link">
-                          <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
-                        </a>
-                      </div>
-                      <div class="card-body">
-                        This is some text within a card body.
+                    <div class="col">
+                      <div class="card info-card">
+                        <div class="card-header d-flex flex-row justify-content-between">
+                          <h6>Tundra's Conundrum</h6>
+                          <a href="#" class="external-link">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/external-link.png"/>
+                          </a>
+                        </div>
+                        <div class="card-body text-light">
+
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -205,10 +308,23 @@
 
         <div id="contact" class="row">
           <div class="col">
-            <div class="card bg-primary border border-light">
-              <div class="card-body text-light">
-                <h5 class="card-title">Contact</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="position-relative">
+              <img class="corner-icon" src="https://img.icons8.com/material-rounded/96/ffffff/cursor.png"/>
+              <div class="card bg-primary border border-light">
+                <div class="card-body text-light text-light">
+                  <h5 class="card-title">Contact</h5>
+                  <div class="d-flex flex-row justify-content-center">
+                    <a href="mailto:vcabardo@nmsu.edu" target="_blank">
+                      <img class='logo' src="https://img.icons8.com/ios-glyphs/60/ffffff/ms-outlook.png"/>
+                    </a>
+                    <a href="https://github.com/vcabardo" target="_blank">
+                      <img class='logo' src="https://img.icons8.com/ios-glyphs/60/ffffff/github.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vensan-cabardo/" target="_blank">
+                      <img class='logo' src="https://img.icons8.com/ios-glyphs/60/ffffff/linkedin.png"/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -216,21 +332,44 @@
       </div>
 
       <div class="col-1">
-        <div class="side-info sidebar d-flex flex-column justify-content-center">
-          vensancabardo@gmail.com
-        </div>
+          <hr id="right">
       </div>
     </div>
   </div>
 
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-  <a href="https://icons8.com/icon/62856/github">GitHub icon by Icons8</a>
-  <a href="https://icons8.com/icon/98960/linkedin">LinkedIn icon by Icons8</a>
-  <a href="https://icons8.com/icon/100638/microsoft-outlook">Microsoft Outlook icon by Icons8</a>
-  <a href="https://icons8.com/icon/82787/external-link">External Link icon by Icons8</a>
+<footer>
+  <div class="container-fluid text-center text-lg-start text-light navbar-bg-color">
+    <!-- <div class="row ">
+      <div class="col">
+
+      </div>
+    </div> -->
+    <div class="row d-flex flex-row justify-content-between pt-4 pb-4">
+      <div class="col-1 text-right">
+        <img src="https://img.icons8.com/material-outlined/48/ffffff/search--v1.png"/>
+      </div>
+      <div class="col-11">
+        <div class="rect rounded">
+          <h6 class="search-text">Created By Vensan Cabardo</h6>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col">
+        <a href="https://icons8.com/icon/62856/github">GitHub icon by Icons8</a>
+        <a href="https://icons8.com/icon/98960/linkedin">LinkedIn icon by Icons8</a>
+        <a href="https://icons8.com/icon/82787/external-link">External Link icon by Icons8</a>
+        <a href="https://icons8.com/icon/82771/delete">Delete icon by Icons8</a>
+        <a href="https://icons8.com/icon/6q0VaNeSlcPI/rounded-square">Rounded Square icon by Icons8</a>
+        <a href="https://icons8.com/icon/85458/minus">Minus icon by Icons8</a>
+        <a href="https://icons8.com/icon/100638/microsoft-outlook">Microsoft Outlook icon by Icons8</a>
+      </div>
+    </div> -->
+  </div>
 </footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
